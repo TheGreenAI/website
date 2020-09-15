@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
+
+// Atomize Imports
+import { StyleReset, ThemeProvider } from "atomize";
+import { Text } from "atomize";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello There!</h1>
-    </div>
+    <ThemeProvider>
+      <StyleReset />
+      <Text tag="h1" textSize="display1" m={{ b: "4rem" }}>
+        This is h1 of display1 size
+      </Text>
+    </ThemeProvider>
   );
 }
 
