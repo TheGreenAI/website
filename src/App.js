@@ -1,18 +1,9 @@
 import React from "react";
 
-import Header from './components/NavBar';
-
-// Atomize Imports
-
-import { Text } from "atomize";
+import Header from "./components/NavBar";
 
 function App() {
-  return (
-      // <Text tag="h1" textSize="display1" m={{ b: "4rem" }}>
-      //   This is h1 of display1 size
-      // </Text>
-      <Header />
-  );
+  return <Header />;
 }
 
 export default App;
