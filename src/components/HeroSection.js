@@ -1,7 +1,21 @@
 import React from "react";
 // import { Link } from "gatsby";
 
-import { Button, Container, Text, Div, Icon, Anchor } from "atomize";
+import {
+  Button,
+  Container,
+  Text,
+  Div,
+  Icon,
+  Anchor,
+  Image,
+  Row,
+  Col,
+} from "atomize";
+
+import forest from "../images/forest.jpg";
+
+import rocketFont from "../fonts/Rocketwildness-7BB8R.ttf"
 
 class HeroSection extends React.Component {
   render() {
@@ -14,7 +28,7 @@ class HeroSection extends React.Component {
               textWeight="500"
               textAlign="center"
               textSize="90px"
-              //   fontFamily="secondary"
+              fontFamily={rocketFont}
               m={{ b: "4rem" }}
             >
               Green AI
@@ -38,17 +52,19 @@ class HeroSection extends React.Component {
               justify="center"
               flexDir={{ xs: "column", sm: "row" }}
             >
-              <Button
-                h="3rem"
-                w={{ xs: "100%", sm: "11rem" }}
-                bg="info700"
-                hoverBg="info800"
-                rounded="lg"
-                m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
-              >
-                Get Started Now
-              </Button>
-              <Anchor href="#" target="_blank">
+              <Anchor href="">
+                <Button
+                  h="3rem"
+                  w={{ xs: "100%", sm: "11rem" }}
+                  bg="info700"
+                  hoverBg="info800"
+                  rounded="lg"
+                  m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
+                >
+                  Get Started Now
+                </Button>
+              </Anchor>
+              <Anchor href="">
                 <Button
                   h="3rem"
                   w={{ xs: "100%", sm: "11rem" }}
@@ -75,12 +91,22 @@ class HeroSection extends React.Component {
             </Div>
           </Container>
         </Div>
+
         <Div
-          tag="section"
-          w="100vw"
-          p={{ t: { xs: "3rem", md: "6rem" } }}
-          overflow="hidden"
-        ></Div>
+          // bg={{ xs: "gray200", md: "white" }}
+          m={{ t: { xs: "3rem", lg: "5" } }}
+        >
+          <Container>
+            <Image
+              src={forest}
+              rounded="lg"
+              p={{ y: "3.5rem" }}
+              d="flex"
+              flexDir={{ xs: "column", lg: "row" }}
+              justify="space-between"
+            />
+          </Container>
+        </Div>
       </>
     );
   }

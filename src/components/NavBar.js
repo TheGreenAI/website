@@ -126,14 +126,14 @@ class Header extends React.Component {
                 textColor="medium"
                 hoverTextColor="black"
                 transition
-                onClick={() => scrollTo("#features")}
+                // onClick={() => scrollTo("#features")}
               >
                 Features
               </Anchor>
 
               <Anchor
-                href="https://github.com/proksh/atomize"
-                target="_blank"
+                // href="https://github.com/proksh/atomize"
+                // target="_blank"
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
@@ -144,8 +144,8 @@ class Header extends React.Component {
               </Anchor>
 
               <Anchor
-                href="http://atomizedesign.com"
-                target="_blank"
+                // href="http://atomizedesign.com"
+                // target="_blank"
                 m={{ r: "2.5rem", b: { xs: "4rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
