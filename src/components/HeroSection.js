@@ -9,89 +9,93 @@ class HeroSection extends React.Component {
   render() {
     return (
       <>
-        <Div tag="section" p={{ t: { xs: "6rem", md: "10rem" } }}>
-          <Container d="flex" flexDir="column" align="center">
-            <Text
-              tag="h1"
-              textWeight="500"
-              textAlign="center"
-              textSize="90px"
-              m={{ b: "3rem" }}
-            >
-              Green AI
-            </Text>
-            <Text
-              tag="h2"
-              textWeight="400"
-              maxW="36rem"
-              textSize="subheader"
-              textAlign="center"
-              //   fontFamily="secondary"
-              textColor="medium"
-              m={{ b: "-3rem" }}
-            >
-              Green AI is a startup, working to blah de blah de blue ke duek
-              asldfk elwad elsa frozen anna eric is single etc.
-            </Text>
-
+        <Div
+          // bg={{ xs: "gray200", md: "white" }}
+          m={{ t: { xs: "3rem", lg: "5" } }}
+        >
+          <Container>
+            {/* <Image src={forest} /> */}
             <Div
-              // bg={{ xs: "gray200", md: "white" }}
-              m={{ t: { xs: "3rem", lg: "5" } }}
-            >
-              <Container>
-                <Image
-                  src={forest}
-                  rounded="lg"
-                  p={{ y: "3.5rem" }}
-                  d="flex"
-                  flexDir={{ xs: "column", lg: "row" }}
-                  justify="space-between"
-                />
-              </Container>
-            </Div>
-
-            <Div
+              bgImg={forest}
+              bgSize="cover"
+              bgPos="center"
+              tag="section"
+              p={{ t: { xs: "6rem", md: "10rem" } }}
+              rounded="lg"
+              p={{ y: "3.5rem" }}
+              m={{ y: "10rem" }}
               d="flex"
-              w="100%"
-              justify="center"
-              flexDir={{ xs: "column", sm: "row" }}
+              flexDir={{ xs: "column", lg: "row" }}
+              justify="space-between"
             >
-              <Anchor href="">
-                <Button
-                  h="3rem"
-                  w={{ xs: "100%", sm: "11rem" }}
-                  bg="info700"
-                  hoverBg="info800"
-                  rounded="lg"
-                  m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
+              <Container d="flex" flexDir="column" align="center">
+                <Text
+                  tag="h1"
+                  textWeight="500"
+                  textAlign="center"
+                  textSize="90px"
+                  m={{ b: "4rem" }}
                 >
-                  Get Started Now
-                </Button>
-              </Anchor>
-              <Anchor href="">
-                <Button
-                  h="3rem"
-                  w={{ xs: "100%", sm: "11rem" }}
-                  bg="transparent"
-                  hoverBg="gray400"
-                  border="1px solid"
-                  borderColor="gray600"
-                  //   hoverBorderColor="gray800"
-                  rounded="lg"
-                  p={{ l: "0.5rem", r: "1rem" }}
+                  Green AI
+                </Text>
+                <Text
+                  tag="h2"
+                  textWeight="400"
+                  maxW="36rem"
+                  textSize="subheader"
+                  textAlign="center"
+                  //   fontFamily="secondary"
                   textColor="medium"
-                  prefix={
-                    <Icon
-                      name="Play"
-                      size="18px"
-                      m={{ r: "0.5rem" }}
-                      color="black400"
-                    />
-                  }
+                  m={{ b: "2.5rem" }}
                 >
-                  Watch Video
-                </Button>
-              </Anchor>
+                  Green AI is a startup, working to blah de blah de blue ke duek
+                  asldfk elwad elsa frozen anna eric is single etc.
+                </Text>
+
+                <Div
+                  d="flex"
+                  w="100%"
+                  justify="center"
+                  flexDir={{ xs: "column", sm: "row" }}
+                >
+                  <Anchor href="">
+                    <Button
+                      h="3rem"
+                      w={{ xs: "100%", sm: "11rem" }}
+                      bg="info700"
+                      hoverBg="info800"
+                      rounded="lg"
+                      m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
+                    >
+                      Get Started Now
+                    </Button>
+                  </Anchor>
+                  <Anchor href="">
+                    <Button
+                      h="3rem"
+                      w={{ xs: "100%", sm: "11rem" }}
+                      bg="transparent"
+                      hoverBg="gray400"
+                      border="1px solid"
+                      borderColor="gray600"
+                      //   hoverBorderColor="gray800"
+                      rounded="lg"
+                      p={{ l: "0.5rem", r: "1rem" }}
+                      textColor="medium"
+                      prefix={
+                        <Icon
+                          name="Play"
+                          size="18px"
+                          m={{ r: "0.5rem" }}
+                          color="black400"
+                        />
+                      }
+                    >
+                      Watch Video
+                    </Button>
+                  </Anchor>
+                </Div>
+              </Container>
             </Div>
           </Container>
         </Div>
