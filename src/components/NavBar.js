@@ -162,12 +162,15 @@ class Header extends React.Component {
                 For Designers
               </Anchor>
               <Button
-                bg="gray300"
+                bg="white"
                 hoverBg="gray500"
                 textColor="medium"
                 w={{ xs: "100%", sm: "8.5rem" }}
                 rounded="lg"
                 style={{ letterSpacing: "-0.5px" }}
+                border="1px solid"
+                borderColor="black"
+                hoverBorderColor="info900"
               >
                 Documentation
               </Button>
