@@ -1,6 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Div, Image, Container, Button, Anchor, /*scrollTo,*/ Icon } from "atomize";
+import {
+  Div,
+  Image,
+  Container,
+  Button,
+  Anchor,
+  /*scrollTo,*/ Icon,
+} from "atomize";
 
 class Header extends React.Component {
   constructor(props) {

@@ -1,15 +1,7 @@
 import React from "react";
 // import { Link } from "gatsby";
 
-import {
-  Button,
-  Container,
-  Text,
-  Div,
-  Icon,
-  Anchor,
-  Image,
-} from "atomize";
+import { Button, Container, Text, Div, Icon, Anchor, Image } from "atomize";
 
 import forest from "../images/forest.jpg";
 
@@ -24,7 +16,7 @@ class HeroSection extends React.Component {
               textWeight="500"
               textAlign="center"
               textSize="90px"
-              m={{ b: "4rem" }}
+              m={{ b: "3rem" }}
             >
               Green AI
             </Text>
@@ -36,10 +28,27 @@ class HeroSection extends React.Component {
               textAlign="center"
               //   fontFamily="secondary"
               textColor="medium"
-              m={{ b: "2.5rem" }}
+              m={{ b: "-3rem" }}
             >
-              Green AI is a startup, working to
+              Green AI is a startup, working to blah de blah de blue ke duek
+              asldfk elwad elsa frozen anna eric is single etc.
             </Text>
+
+            <Div
+              // bg={{ xs: "gray200", md: "white" }}
+              m={{ t: { xs: "3rem", lg: "5" } }}
+            >
+              <Container>
+                <Image
+                  src={forest}
+                  rounded="lg"
+                  p={{ y: "3.5rem" }}
+                  d="flex"
+                  flexDir={{ xs: "column", lg: "row" }}
+                  justify="space-between"
+                />
+              </Container>
+            </Div>
 
             <Div
               d="flex"
@@ -84,22 +93,6 @@ class HeroSection extends React.Component {
                 </Button>
               </Anchor>
             </Div>
-          </Container>
-        </Div>
-
-        <Div
-          // bg={{ xs: "gray200", md: "white" }}
-          m={{ t: { xs: "3rem", lg: "5" } }}
-        >
-          <Container>
-            <Image
-              src={forest}
-              rounded="lg"
-              p={{ y: "3.5rem" }}
-              d="flex"
-              flexDir={{ xs: "column", lg: "row" }}
-              justify="space-between"
-            />
           </Container>
         </Div>
       </>
