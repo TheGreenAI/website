@@ -9,8 +9,6 @@ import {
   Icon,
   Anchor,
   Image,
-  Row,
-  Col,
 } from "atomize";
 
 import forest from "../images/forest.jpg";
