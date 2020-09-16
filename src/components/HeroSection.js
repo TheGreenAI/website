@@ -15,8 +15,6 @@ import {
 
 import forest from "../images/forest.jpg";
 
-import rocketFont from "../fonts/Rocketwildness-7BB8R.ttf"
-
 class HeroSection extends React.Component {
   render() {
     return (
@@ -28,7 +26,6 @@ class HeroSection extends React.Component {
               textWeight="500"
               textAlign="center"
               textSize="90px"
-              fontFamily={rocketFont}
               m={{ b: "4rem" }}
             >
               Green AI
