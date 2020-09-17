@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "gatsby";
 
-import { Button, Container, Text, Div, Icon, Anchor, Image } from "atomize";
+import { Button, Container, Text, Div, Icon, Anchor } from "atomize";
 
 import forest from "../images/forest.jpg";
 
@@ -20,13 +20,15 @@ class HeroSection extends React.Component {
               bgSize="cover"
               bgPos="center"
               tag="section"
-              p={{ t: { xs: "6rem", md: "10rem" } }}
+              p={{ y: "3.5rem", t: { xs: "6rem", md: "10rem" } }}
+              // p={{ y: "3.5rem" }}
               rounded="lg"
-              p={{ y: "3.5rem" }}
-              m={{ y: "10rem" }}
+              m={{ t: "6rem", b: "2rem" }}
               d="flex"
               flexDir={{ xs: "column", lg: "row" }}
               justify="space-between"
+              bgRepeat="no-repeat"
+              h={{ xs: "auto", md: "900px", lg: "625px" }}
             >
               <Container d="flex" flexDir="column" align="center">
                 <Text
@@ -34,7 +36,7 @@ class HeroSection extends React.Component {
                   textWeight="500"
                   textAlign="center"
                   textSize="90px"
-                  m={{ b: "4rem" }}
+                  m={{ b: "4rem", t: "-5rem" }}
                 >
                   Green AI
                 </Text>
