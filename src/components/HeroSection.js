@@ -69,15 +69,15 @@ class HeroSection extends React.Component {
                       rounded="lg"
                       m={{ r: "1rem", b: { xs: "1rem", sm: "0" } }}
                     >
-                      Get Started Now
+                      Learn More
                     </Button>
                   </Anchor>
                   <Anchor href="">
                     <Button
                       h="3rem"
                       w={{ xs: "100%", sm: "11rem" }}
-                      bg="transparent"
-                      hoverBg="gray400"
+                      bg="gray100"
+                      hoverBg="gray500"
                       border="1px solid"
                       borderColor="gray600"
                       //   hoverBorderColor="gray800"

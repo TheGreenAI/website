@@ -6,16 +6,14 @@ import {
   Container,
   Button,
   Anchor,
-  /*scrollTo,*/ Icon,
 } from "atomize";
 
-class Header extends React.Component {
+class NavBar extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       showMobileHeaderMenu: false,
-      showProductHunt: false,
     };
   }
 
@@ -28,14 +26,10 @@ class Header extends React.Component {
   };
 
   render() {
-    const { showMobileHeaderMenu, showProductHunt } = this.state;
+    const { showMobileHeaderMenu } = this.state;
 
     return (
       <>
-        <ProductHuntBanner
-          show={showProductHunt}
-          close={() => this.setState({ showProductHunt: false })}
-        />
         <Div
           tag="header"
           pos="fixed"
@@ -135,7 +129,7 @@ class Header extends React.Component {
                 transition
                 // onClick={() => scrollTo("#features")}
               >
-                Features
+                About
               </Anchor>
 
               <Anchor
@@ -147,7 +141,7 @@ class Header extends React.Component {
                 hoverTextColor="black"
                 transition
               >
-                Github
+                Feautres
               </Anchor>
 
               <Anchor
@@ -159,20 +153,21 @@ class Header extends React.Component {
                 hoverTextColor="black"
                 transition
               >
-                For Designers
+                Github
               </Anchor>
               <Button
                 bg="white"
                 hoverBg="gray500"
                 textColor="medium"
-                w={{ xs: "100%", sm: "8.5rem" }}
+                textSize="15px"
+                w={{ xs: "100%", sm: "13rem" }}
                 rounded="lg"
                 style={{ letterSpacing: "-0.5px" }}
                 border="1px solid"
                 borderColor="black"
                 hoverBorderColor="info900"
               >
-                Documentation
+                Sign Up For Early Access
               </Button>
             </Div>
           </Container>
@@ -182,66 +177,12 @@ class Header extends React.Component {
   }
 }
 
-Header.propTypes = {
+NavBar.propTypes = {
   siteTitle: PropTypes.string,
 };
 
-Header.defaultProps = {
+NavBar.defaultProps = {
   siteTitle: ``,
 };
 
-export default Header;
-
-const ProductHuntBanner = ({ show, close }) => (
-  <>
-    <Div
-      d="flex"
-      h={show ? { xs: "5.25rem", sm: "3.75rem" } : "0"}
-      opacity={show ? "1" : "0"}
-      overflow="hidden"
-      flexWrap="wrap"
-      justify="center"
-      align="center"
-      textColor="white"
-      pos="fixed"
-      bottom="0"
-      left="0"
-      right="0"
-      zIndex="110"
-      textAlign="center"
-      p="0.75rem"
-      style={{ background: "#DA552F" }}
-    >
-      <Anchor
-        href="https://www.producthunt.com/posts/atomize-react"
-        target="_blank"
-        d="flex"
-        flexWrap="wrap"
-        justify="center"
-        align="center"
-        textColor="white"
-        hoverTextColor="white"
-      >
-        We are trending on{" "}
-        <Image
-          //   src={producthunt}
-          h="2.25rem"
-          w="auto"
-          cursor="pointer"
-          m={{ x: "0.5rem" }}
-        />{" "}
-        It will be a real help if you could support us 👉{" "}
-      </Anchor>
-      <Icon
-        name="Cross"
-        pos="absolute"
-        right="1rem"
-        top="50%"
-        transform="translateY(-50%)"
-        color="white"
-        size="16px"
-        onClick={close}
-      />
-    </Div>
-  </>
-);
+export default NavBar;
