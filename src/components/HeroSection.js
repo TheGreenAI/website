@@ -28,7 +28,8 @@ class HeroSection extends React.Component {
               flexDir={{ xs: "column", lg: "row" }}
               justify="space-between"
               bgRepeat="no-repeat"
-              h={{ xs: "700px", md: "900px", lg: "625px" }}
+              h={{ xs: "600px", md: "900px", lg: "625px" }}
+              minH={{ xs: "600px" }}
             >
               <Container d="flex" flexDir="column" align="center">
                 <Text
@@ -43,15 +44,20 @@ class HeroSection extends React.Component {
                 <Text
                   tag="h2"
                   textWeight="400"
-                  // maxW="36rem"
+                  maxW="36rem"
                   textSize="subheader"
                   textAlign="center"
                   //   fontFamily="secondary"
                   textColor="medium"
                   m={{ b: "2.5rem" }}
+                  bg="white"
+                  p="15px"
+                  rounded="xl"
                 >
-                  Green AI is a startup, working to blah de blah de blue ke duek
-                  asldfk elwad elsa frozen anna eric is single etc.
+                  Green AI is a startup, Lorem ipsum dolor sit amet, consectetur
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum. also eric is
+                  single etc.
                 </Text>
 
                 <Div
