@@ -47,7 +47,7 @@ class NavBar extends React.Component {
           <Container d="flex" align="center" justify="space-between">
             <Div cursor="pointer">
               <Image
-                // src={logo}
+                src={logo}
                 alt="atomize design system logo"
                 h="18px"
                 w="auto"
@@ -87,7 +87,6 @@ class NavBar extends React.Component {
               ></Div>
             </Div>
 
-            {/* Links for Desktop */}
             <Div
               d="flex"
               onClick={() => this.toggleHeaderMenu(false)}
@@ -121,14 +120,13 @@ class NavBar extends React.Component {
                 textColor="medium"
                 hoverTextColor="black"
                 transition
-                // onClick={() => scrollTo("#features")}
               >
                 About
               </Anchor>
 
               <Anchor
-                // href="https://github.com/proksh/atomize"
-                // target="_blank"
+                href="https://github.com/TheGreenAI/website"
+                target="_blank"
                 m={{ r: "2rem", b: { xs: "1rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"
@@ -139,8 +137,8 @@ class NavBar extends React.Component {
               </Anchor>
 
               <Anchor
-                // href="http://atomizedesign.com"
-                // target="_blank"
+                href=""
+                target="_blank"
                 m={{ r: "2.5rem", b: { xs: "4rem", md: "0" } }}
                 textWeight="500"
                 textColor="medium"

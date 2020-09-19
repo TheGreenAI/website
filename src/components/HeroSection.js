@@ -9,19 +9,14 @@ class HeroSection extends React.Component {
   render() {
     return (
       <>
-        <Div
-          // bg={{ xs: "gray200", md: "white" }}
-          m={{ t: { xs: "3rem", lg: "5" } }}
-        >
+        <Div m={{ t: { xs: "3rem", lg: "5" } }}>
           <Container>
-            {/* <Image src={forest} /> */}
             <Div
               bgImg={forest}
               bgSize="cover"
               bgPos="center"
               tag="section"
               p={{ y: "3.5rem", t: { xs: "6rem", md: "10rem" } }}
-              // p={{ y: "3.5rem" }}
               rounded="lg"
               m={{ t: "6rem", b: "2rem" }}
               d="flex"
@@ -34,7 +29,6 @@ class HeroSection extends React.Component {
               <Container d="flex" flexDir="column" align="center">
                 <Text
                   tag="h1"
-                  // textWeight="500"
                   textAlign="center"
                   textSize="90px"
                   m={{ b: "4rem", t: "-5rem" }}
@@ -47,7 +41,6 @@ class HeroSection extends React.Component {
                   maxW="36rem"
                   textSize="subheader"
                   textAlign="center"
-                  //   fontFamily="secondary"
                   textColor="medium"
                   m={{ b: "2.5rem" }}
                   bg="white"
@@ -86,7 +79,6 @@ class HeroSection extends React.Component {
                       hoverBg="gray500"
                       border="1px solid"
                       borderColor="gray600"
-                      //   hoverBorderColor="gray800"
                       rounded="lg"
                       p={{ l: "0.5rem", r: "1rem" }}
                       textColor="medium"
