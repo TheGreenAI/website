@@ -28,12 +28,12 @@ class HeroSection extends React.Component {
               flexDir={{ xs: "column", lg: "row" }}
               justify="space-between"
               bgRepeat="no-repeat"
-              h={{ xs: "auto", md: "900px", lg: "625px" }}
+              h={{ xs: "700px", md: "900px", lg: "625px" }}
             >
               <Container d="flex" flexDir="column" align="center">
                 <Text
                   tag="h1"
-                  textWeight="500"
+                  // textWeight="500"
                   textAlign="center"
                   textSize="90px"
                   m={{ b: "4rem", t: "-5rem" }}
@@ -43,7 +43,7 @@ class HeroSection extends React.Component {
                 <Text
                   tag="h2"
                   textWeight="400"
-                  maxW="36rem"
+                  // maxW="36rem"
                   textSize="subheader"
                   textAlign="center"
                   //   fontFamily="secondary"

@@ -1,12 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Div,
-  Image,
-  Container,
-  Button,
-  Anchor,
-} from "atomize";
+import { Div, Image, Container, Button, Anchor, Text } from "atomize";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -157,15 +151,16 @@ class NavBar extends React.Component {
               </Anchor>
               <Button
                 bg="white"
-                hoverBg="gray500"
-                textColor="medium"
+                hoverBg="info700"
+                textColor="black"
                 textSize="15px"
                 w={{ xs: "100%", sm: "13rem" }}
                 rounded="lg"
                 style={{ letterSpacing: "-0.5px" }}
                 border="1px solid"
-                borderColor="black"
-                hoverBorderColor="info900"
+                borderColor="gray500"
+                hoverBorderColor="gray600"
+                hoverTextColor="white"
               >
                 Sign Up For Early Access
               </Button>
