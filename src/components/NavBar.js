@@ -47,7 +47,7 @@ class NavBar extends React.Component {
           <Container d="flex" align="center" justify="space-between">
             <Div cursor="pointer">
               <Image
-                src={logo}
+                // src={logo}
                 alt="atomize design system logo"
                 h="18px"
                 w="auto"
