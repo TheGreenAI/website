@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Div, Image, Container, Button, Anchor, Text } from "atomize";
+import { Div, Image, Container, Button, Anchor } from "atomize";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -137,7 +137,7 @@ class NavBar extends React.Component {
               </Anchor>
 
               <Anchor
-                href=""
+                href="https://github.com/TheGreenAI/website"
                 target="_blank"
                 m={{ r: "2.5rem", b: { xs: "4rem", md: "0" } }}
                 textWeight="500"
