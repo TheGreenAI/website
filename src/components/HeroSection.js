@@ -9,12 +9,14 @@ class HeroSection extends React.Component {
   render() {
     return (
       <>
-        <Div m={{ t: { xs: "3rem", lg: "5" } }}>
+        <Div
+          m={{ t: { xs: "3rem", lg: "5" } }}
+          bgImg={forest}
+          bgSize="cover"
+          bgPos="center"
+        >
           <Container>
             <Div
-              bgImg={forest}
-              bgSize="cover"
-              bgPos="center"
               tag="section"
               p={{ y: "3.5rem", t: { xs: "6rem", md: "10rem" } }}
               rounded="lg"
