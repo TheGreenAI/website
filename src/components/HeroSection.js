@@ -71,7 +71,7 @@ class HeroSection extends React.Component {
                       Learn More
                     </Button>
                   </Anchor>
-                  <Anchor href="">
+                  <Anchor href="https://youtu.be/Ee7eD6U0N04" target="_blank">
                     <Button
                       h="3rem"
                       w={{ xs: "100%", sm: "11rem" }}
